@@ -54,4 +54,4 @@ if (message.content.startsWith(prefix + 'watching')) {
 
  });
 
-client.login('MjU3MTExNDc2NDA0MjI0MDAx.DYmG3w.UQyBPtQ3nHcrzFU0_jG4aiqIgxY');
+client.login('MjU3MTExNDc2NDA0MjI0MDAx.DYxn5A.tASALifV8IEe3QQGB2iMypCPt2k');
