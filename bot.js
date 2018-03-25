@@ -1,57 +1,27 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
 
-client.on('message', msg => {
-  if (msg.content === '/*--*/') {
-    msg.reply('Pong!');
+
+client.on("ready", () => {
+client.user.setPresence({
+  status: 'dnd',
+  game: { 
+     type: 0,
+     name: 'ItzCasper|YT#1451:) ',
+     details: `I'm : KBOOSH - Developer and Programmer`,
+     url: 'http://twitch.tv/Streammingg',
+     state: `إنْ لَمْ تَجِد لكْ حآقدْ إعلمْ أنْك إنسآن فآشِلْ`,
+    application_id: '281376075802476544',
+     assets: {
+        small_image: `366835431037337600`,
+        small_text: ' Take This ! ' ,
+        large_image: `370451271133429760`,
+        large_text: `ҜṦẰ.OMA♥` }
+
   }
+    });
 });
 
-client.on('message', message => {
-var prefix = "@";
 
-  if (!message.content.startsWith(prefix)) return;
-  var args = message.content.split(' ').slice(1);
-  var argresult = args.join(' ');
-  if (message.author.id == 410835593451405312) return;
-
-
-if (message.content.startsWith(prefix + 'playing')) {
-  if (message.author.id !== 'botownerid') return message.reply('**only for the botowner **')
-client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult}** : Playing changed to`)
-    message.react("👌")
-
-} else
-
-if (message.content.startsWith(prefix + 'setname')) {
-  if (message.author.id !== 'botownerid') return message.reply('**only for the botowner **')
-  client.user.setUsername(argresult).then
-      message.channel.sendMessage(`**${argresult}** : done`)
-} else
-
-if (message.content.startsWith(prefix + 'streem')) {
-  if (message.author.id !== 'botownerid') return message.reply('**only for the botowner **')
-client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
-    message.channel.sendMessage(`**${argresult}** streem changed to`)
-    message.react("👌")
-
-} else
-
-
-
-if (message.content.startsWith(prefix + 'watching')) {
-  if (message.author.id !== 'botownerid') return message.reply('**only for the botowner **')
-    client.user.setActivity(argresult, {type : 'watching'});
- message.channel.sendMessage(`**${argresult}** : Watching changed to`)
- message.react("👌")
-
-}
-
- });
-
-client.login('MjU3MTExNDc2NDA0MjI0MDAx.DYxn5A.tASALifV8IEe3QQGB2iMypCPt2k');
+client.login('NDI3MTcxODc2NDIzNTk4MDkx.DZgqXA.NM28qODc8pqetxYoYHb1iIxYXco');
