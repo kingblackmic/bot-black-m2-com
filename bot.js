@@ -24,4 +24,37 @@ client.user.setPresence({
 });
 
 
+
+client.on('message', message => {
+    if (message.content === "-Gta v") {
+        if(!message.channel.guild) return;
+        message.member.addRole(message.guild.roles.find("name", "Gta v"));
+  }
+    
+});
+
+
+
+
+client.on('message', msg => {
+  if (msg.content === '-Gta v') {
+    msg.reply('تُمَّ الْاِخْتِيَارُ  :white_check_mark: ');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.login('NDI3MTcxODc2NDIzNTk4MDkx.DZgqXA.NM28qODc8pqetxYoYHb1iIxYXco');
