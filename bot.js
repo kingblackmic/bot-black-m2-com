@@ -277,4 +277,26 @@ client.on('message', msg => {
 
 
 
+
+
+client.on("message", message => {
+    if (message.content === "!help") {
+     const embed = new Discord.RichEmbed() 
+         .setColor("#ffff00")
+         .setFooter('By Hero')
+         .setThumbnail(message.author.avatarURL)
+         .setDescription(`
+  
+     **✨ Commands | اوامر ✨**
+
+**قريباً بوت إختيار لعبه**
+   `)
+   message.author.sendEmbed(embed)
+   
+   }
+ }); 
+
+
+
+
 client.login('NDI3MTcxODc2NDIzNTk4MDkx.DZgqXA.NM28qODc8pqetxYoYHb1iIxYXco');
