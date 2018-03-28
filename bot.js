@@ -38,7 +38,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === '-Gta v') {
-    msg.reply('تُمَّ الْاِخْتِيَارُ  :white_check_mark: ');
+    msg.reply('تُمَّ الْاِخْتِيَارُ العبه :white_check_mark: ');
   }
 });
 
