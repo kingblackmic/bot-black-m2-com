@@ -280,7 +280,7 @@ client.on('message', msg => {
 
 
 client.on("message", message => {
-    if (message.content === "!help") {
+    if (message.content === "-help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#ffff00")
          .setFooter('By Hero')
@@ -288,11 +288,11 @@ client.on("message", message => {
          .setDescription(`
   
      **✨ Commands | اوامر ✨**
-```
+
 
 **قريباً بوت إختيار لعبه**
 
-```
+
    `)
    message.author.sendEmbed(embed)
    
