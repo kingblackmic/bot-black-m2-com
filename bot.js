@@ -288,8 +288,11 @@ client.on("message", message => {
          .setDescription(`
   
      **✨ Commands | اوامر ✨**
+```
 
 **قريباً بوت إختيار لعبه**
+
+```
    `)
    message.author.sendEmbed(embed)
    
