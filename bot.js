@@ -8,7 +8,7 @@ client.user.setPresence({
   status: 'dnd',
   game: { 
      type: 0,
-     name: 'ItzCasper|YT#1451:) ',
+     name: 'صــيانه:) ',
      details: `I'm : KBOOSH - Developer and Programmer`,
      url: 'http://twitch.tv/Streammingg',
      state: `إنْ لَمْ تَجِد لكْ حآقدْ إعلمْ أنْك إنسآن فآشِلْ`,
